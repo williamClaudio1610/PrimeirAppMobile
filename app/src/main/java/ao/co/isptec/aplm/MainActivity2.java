@@ -3,6 +3,7 @@ package ao.co.isptec.aplm;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,7 +13,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity2 extends AppCompatActivity {
 
-    private EditText texto;
+    private TextView texto;
 
     @SuppressLint("WrongViewCast")
     @Override
@@ -26,7 +27,7 @@ public class MainActivity2 extends AppCompatActivity {
             return insets;
         });*/
 
-        texto = findViewById(R.id.editTextText);
+        texto = findViewById(R.id.textView2);
 
         String textoRecebe = getIntent().getStringExtra("keyword");
 
